@@ -9,3 +9,7 @@
 .navbar-brand {
   letter-spacing: 2.5px;
 }
+.nav-link:hover {
+  background-color: blue;
+  transition-delay: 0.5;
+}

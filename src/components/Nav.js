@@ -20,19 +20,19 @@ const Nav = () => {
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ml-auto">
-          <li className="nav-item ">
+          <li className="nav-item">
             <NavLink className="nav-link" to="./">
-              Home <span className="sr-only">(current)</span>
+              Home
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="./body">
-              Body
+            <NavLink className="nav-link" to="./service">
+              Projects
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="./footer">
-              Footer
+            <NavLink className="nav-link" to="./contact">
+              Contact Us
             </NavLink>
           </li>
         </ul>
