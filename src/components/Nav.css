@@ -1,6 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap");
 .navbar {
-  background-color: rgb(241, 236, 228);
+  font-family: "Noto Sans TC", sans-serif;
+  background-color: rgb(213, 231, 231);
 }
 .nav-link {
   margin-right: 40px;
+}
+.navbar-brand {
+  letter-spacing: 2.5px;
 }

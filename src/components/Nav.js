@@ -5,7 +5,7 @@ const Nav = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light ">
       <NavLink className="navbar-brand" to="./">
-        Navbar
+        Mysite
       </NavLink>
       <button
         className="navbar-toggler"
