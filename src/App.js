@@ -1,17 +1,27 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
-import Nav from "./components/Nav";
+import Home from "./components/Home";
 
 function App() {
+  const [album, setalbum] = useState([]);
+  const getalbum = () => {
+    axios
+      .get("https://jsonplaceholder.typicode.com/albums")
+      .then((response) => {
+        console.log(response.data);
+        setalbum(response.data);
+      });
+  };
+  useEffect(() => {
+    getalbum();
+  }, [setalbum]);
+
   return (
     <>
-      <Router>
-        <Nav />
-        <Switch>
-          <Route path="/" />
-        </Switch>
-      </Router>
+      {album.map((s) => (
+        <Home key={s.id} id={s.id} title={s.title} />
+      ))}
     </>
   );
 }
