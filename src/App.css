@@ -1,5 +1,12 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  text-align: center;
+}
+h1 {
+  text-transform: uppercase;
+}
+.topbar {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
